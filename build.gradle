@@ -1,8 +1,20 @@
+// 项目根目录的 build.gradle
 buildscript {
-    ext {
-        agp_version = '7.4.2'
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/maven-central' }
+        google()
+        jcenter()
     }
-}// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-id 'com.android.application' version '7.4.2' apply false
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/maven-central' }
+        google()
+        jcenter()
+    }
 }
