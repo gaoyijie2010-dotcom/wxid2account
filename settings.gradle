@@ -10,8 +10,6 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    // 注释掉这一行，解决仓库配置冲突
-    // repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
